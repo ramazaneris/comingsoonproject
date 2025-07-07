@@ -42,7 +42,10 @@ export default function ComingSoonPage() {
                     </Button>
                 </Link>
 
-                <Link href={`mailto:${domain}@ramco.tr`} className="w-full">
+                <Link
+                    href={`mailto:contact@ramco.tr?subject=${domain} Hakkında`}
+                    className="w-full"
+                >
                     <Button
                         variant="bordered"
                         size="lg"
