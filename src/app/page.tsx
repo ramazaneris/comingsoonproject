@@ -7,6 +7,14 @@ export async function generateMetadata() {
     return {
         title: `${host} - Yapım Aşamasında`,
         description: `${host} üzerinde yeni bir deneyim için çalışıyoruz.`,
+        icons: {
+            icon: "/1685460.png",
+            shortcut: "/public/1685460.png",
+            apple: "/public/1685460.png",
+        },
+        openGraph: {
+            title: `${host} - Ramazan Eriş'in Projesi`,
+        },
     };
 }
 function page() {
