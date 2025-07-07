@@ -1,14 +1,14 @@
+"use client";
+
 import React from "react";
 import { Button } from "@heroui/react";
 import { Home, Mail, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function ComingSoonPage() {
-    const domain =
-        typeof window !== "undefined"
-            ? window.location.hostname
-            : "example.com";
-
+    const pathname = usePathname();
+    const domain = pathname?.split("/")[1] || "example.com";
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
             <h1 className="text-4xl font-bold mb-4">

@@ -20,6 +20,9 @@ importers:
       next:
         specifier: 15.3.5
         version: 15.3.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      projeler:
+        specifier: 'link:'
+        version: 'link:'
       react:
         specifier: ^19.0.0
         version: 19.1.0
