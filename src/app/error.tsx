@@ -1,7 +1,8 @@
+"use client";
+
 import React from "react";
 import { Button } from "@heroui/react";
 import { Home, Mail, ArrowRight } from "lucide-react";
-import Link from "next/link";
 
 export default function ComingSoonPage() {
     const domain =
@@ -26,7 +27,7 @@ export default function ComingSoonPage() {
             </p>
 
             <div className="grid gap-4 md:grid-cols-3 w-full max-w-md">
-                <Link href="/" className="w-full">
+                <a href="/" className="w-full">
                     <Button
                         variant="bordered"
                         size="lg"
@@ -34,20 +35,19 @@ export default function ComingSoonPage() {
                     >
                         <Home className="w-5 h-5 mr-2 text-current" /> Ana Sayfa
                     </Button>
-                </Link>
+                </a>
 
-                <Link href={`mailto:${domain}@ramco.tr`} className="w-full">
+                <a href={`mailto:${domain}@ramco.tr`} className="w-full">
                     <Button
                         variant="bordered"
                         size="lg"
                         className="w-full flex items-center justify-center"
                     >
-                        <Mail className="w-5 h-5 mr-2" fill="white" /> Bize
-                        Ulaşın
+                        <Mail className="w-5 h-5 mr-2" fill="white" color="white" /> Bize Ulaşın
                     </Button>
-                </Link>
+                </a>
 
-                <Link
+                <a
                     href="https://ramco.tr"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function ComingSoonPage() {
                     >
                         <ArrowRight className="w-5 h-5 mr-2" /> ramco.tr
                     </Button>
-                </Link>
+                </a>
             </div>
 
             <p className="mt-10 text-sm text-muted">
