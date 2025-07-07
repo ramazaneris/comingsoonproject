@@ -1,14 +1,12 @@
 import ComingSoonPage from "./ComingSoonPage";
-
+import { headers } from "next/headers";
 export async function generateMetadata() {
-    const domain =
-        typeof window !== "undefined"
-            ? window.location.hostname
-            : "example.com";
+    const headersList = headers();
+    const host = (await headersList).get("host") || "example.com";
 
     return {
-        title: `${domain} - Yapım Aşamasında`,
-        description: `${domain} üzerinde yeni bir deneyim için çalışıyoruz.`,
+        title: `${host} - Yapım Aşamasında`,
+        description: `${host} üzerinde yeni bir deneyim için çalışıyoruz.`,
     };
 }
 function page() {
