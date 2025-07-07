@@ -12,25 +12,6 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export async function generateMetadata() {
-    const domain =
-        typeof window !== "undefined"
-            ? window.location.hostname
-            : "example.com";
-    return {
-        title: `${domain} - Ramazan Eriş'in Projesi`,
-        description: "Ramazan Eriş tarafından geliştirilen bir projedir.",
-        icons: {
-            icon: "/1685460.png",
-            shortcut: "/public/1685460.png",
-            apple: "/public/1685460.png",
-        },
-        openGraph: {
-            title: `${domain} - Ramazan Eriş'in Projesi`,
-        },
-    };
-}
-
 export default function RootLayout({
     children,
 }: Readonly<{
