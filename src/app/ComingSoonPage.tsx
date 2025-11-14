@@ -32,13 +32,16 @@ export default function ComingSoonPage() {
             </p>
 
             <div className="grid gap-4 md:grid-cols-3 w-full max-w-md">
-                <Link href="/" className="w-full">
+                <Link href="/">
                     <Button
                         variant="bordered"
                         size="lg"
                         className="w-full flex items-center justify-center"
                     >
-                        <Home className="w-5 h-5 mr-2 text-current" /> Ana Sayfa
+                        <span>
+                            <Home />
+                        </span>
+                        <span>Ana Sayfa</span>
                     </Button>
                 </Link>
 
@@ -51,8 +54,10 @@ export default function ComingSoonPage() {
                         size="lg"
                         className="w-full flex items-center justify-center"
                     >
-                        <Mail className="w-5 h-5 mr-2" fill="white" /> Bize
-                        Ulaşın
+                        <span>
+                            <Mail />
+                        </span>
+                        <span>Bize Ulaşın</span>
                     </Button>
                 </Link>
 
@@ -66,7 +71,7 @@ export default function ComingSoonPage() {
                         size="lg"
                         className="w-full flex items-center justify-center"
                     >
-                        <ArrowRight className="w-5 h-5 mr-2" /> ramco.tr
+                        <ArrowRight /> ramco.tr
                     </Button>
                 </Link>
             </div>
